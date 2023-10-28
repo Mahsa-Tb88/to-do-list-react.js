@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+}
+:root {
+  --main: rgb(126, 31, 214);
+  --field: rgba(225, 196, 252, 0.801);
+  --border: rgb(219, 216, 216);
+  --backColor: #f5f3ff;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  position: relative;
+  /* height: 100vh;
+  width: 100vw; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f5f9;
+}
+main {
+  width: 100%;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.todoInput {
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  font-size: 1.5rem;
+  border-right: none;
+  height: 3.2rem;
+  width: 80%;
+}
+.formTodo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.todoInput:focus {
+  border: 1px solid var(--main);
+  border-right: none;
+}
+.todoButton {
+  outline: none;
+  border: none;
+  background-color: var(--backColor);
+  padding: 0.6rem;
+  height: 3.2rem;
+  border: 1px solid var(--border);
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  color: var(--main);
+}
+.todoButton:hover {
+  background-color: var(--main);
+  color: #ffffff;
+}
+
+.todoSelectContainer {
+  /* margin-left: 3rem; */
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+.todoSelect {
+  padding: 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  outline: none;
+  width: 80%;
+  color: var(--main);
+}
+.todoSelect option {
+  background-color: var(--backColor);
+}
+
+.formTodo div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
